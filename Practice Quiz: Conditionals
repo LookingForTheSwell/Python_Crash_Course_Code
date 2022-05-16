@@ -57,18 +57,13 @@ def calculate_storage(filesize):
     else:
         return block_size
 NOTES:
-More on '%'. This is essentially disregarding all integers, and focusing on the remainder. Let's take 21/5 for example:
-print(21//5) = 4  --> this simply keeps the integer and forgets about the remainder
-print(21/5) = 4.2  --> so you may be thinking, okay, so 21%5 would be 2? However, keep reading...
-print(21%5) = 1    --> what? how does this make sense?! Keep reading...
-Forget about the decimal for a moment. If we have the integer of 4 and multiply that by 5, we get 20. Okay, that makes sense, 5 can go into 21 four times. Now take 21-20 and you get the remainder (or in other words, you get the answer to print(21%5)), which is 1. Let's practice!
-
-What will print(6000%4096) be? Don't cheat, let's break it down again
+More on '%', which is simply taking the remainder. If you're a visual learner, maybe this will help:
+What will print(6000%4096) be?
 print(6000//4096) = 1
 print(1*4096) = 4096
 Now let's find the remainder!
 print(6000-4096) = 1904
-Double check our work by running the following:
+
 print(6000%4096) = :) 
 
 Hope this helps at least one person to understand some of those Arithmetic Operators! Cheers!
